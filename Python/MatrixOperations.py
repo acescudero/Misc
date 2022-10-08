@@ -69,3 +69,10 @@ def matrix_product(matrix_1, matrix_2):
     resultant_matrix = Matrix2x2([resultant_vec_column_1[0], resultant_vec_column_1[1]], [resultant_vec_column_2[0], resultant_vec_column_2[1]])
     return resultant_matrix
 
+def main():
+    test_matrix = Matrix2x2([1,2],[3,4])
+    #Perform matrix operations here
+
+if __name__==__main__:
+    main()
+
