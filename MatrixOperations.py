@@ -1,3 +1,6 @@
+''' 
+Program to perform basic matrix operations on a 2x2 Matrix
+'''
 
 from random import randrange
 
@@ -65,76 +68,3 @@ def matrix_product(matrix_1, matrix_2):
     resultant_matrix = Matrix2x2([resultant_vec_column_1[0], resultant_vec_column_1[1]], [resultant_vec_column_2[0], resultant_vec_column_2[1]])
     return resultant_matrix
 
-A = Matrix2x2([0,1], [0,0])
-B = Matrix2x2([1,0], [0,0])
-C = Matrix2x2([1,3], [2,4])
-AB = matrix_product(A,B)
-BA = matrix_product(B,A)
-
-D = Matrix2x2([1,1], [0,1])
-E = Matrix2x2([-1,-1], [0,-1])
-
-zero_matrix = Matrix2x2([0,0], [0,0])
-
-test = Matrix2x2([9,2], [4,3])
-
-print(matrix_inverse(test))
-
-'''
-count = 0
-while True:
-    if matrix_product(C,C) == zero_matrix:
-        print(f"Found match after {count} iterations!")
-        print(C)
-        break
-    else:
-        a = randrange(10)
-        b = randrange(10)
-        c = randrange(10)
-        d = randrange(10)
-        C.r1c1, C.r1c2, C.r2c1, C.r2c2 = a, b, c, d
-        count+=1
-
-
-count = 0
-D_inv = matrix_inverse(D)
-E_inv = matrix_inverse(E)
-E_plus_D_inv = matrix_inverse(matrix_add(E,D))
-
-while True:
-    if D_inv != None and E_inv != None and E_plus_D_inv == None:
-        print(f"Found match after {count} iterations!")
-        print("D:")
-        print(D)
-        print("D inverse:")
-        print(D_inv)
-        print("E:")
-        print(E)
-        print("E inv:")
-        print(E_inv)
-        print("E + D:")
-        print(matrix_add(E,D))
-        break
-    else:
-        a = randrange(10)
-        b = randrange(10)
-        c = randrange(10)
-        d = randrange(10)
-        e = randrange(10)
-        f = randrange(10)
-        g = randrange(10)
-        h = randrange(10)
-        D.r1c1, D.r1c2, D.r2c1, D.r2c2 = a, b, c, d
-        E.r1c1, E.r1c2, E.r2c1, E.r2c2 = e, f, g, h
-        count+=1
-        print(f"Iteration: {count}")
-
-'''
-#print(matrix_product(C,C) == zero_matrix)
-
-'''
-print("AB:")
-print(AB)
-print("BA:")
-print(BA)
-'''
