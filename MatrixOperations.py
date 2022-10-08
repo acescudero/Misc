@@ -1,5 +1,6 @@
 ''' 
 Program to perform basic matrix operations on a 2x2 Matrix
+Author: Augusto Escudero
 '''
 
 from random import randrange
